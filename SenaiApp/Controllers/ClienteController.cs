@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SenaiApp.Domain.Entidade;
 
 namespace SenaiApp.Controllers
 {
@@ -11,7 +12,9 @@ namespace SenaiApp.Controllers
 
         public IActionResult Form()
         {
-            return View();
+
+            var model = new Cliente();
+            return View(model);
         }
     }
 }

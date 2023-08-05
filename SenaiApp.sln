@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenaiApp", "SenaiApp\SenaiApp.csproj", "{A6B3424F-4C6A-4323-AC27-B47CAD30D409}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SenaiApp", "SenaiApp\SenaiApp.csproj", "{A6B3424F-4C6A-4323-AC27-B47CAD30D409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenaiApp.Domain", "SenaiApp.Domain\SenaiApp.Domain.csproj", "{CE1E4897-0BC6-42AB-BC6B-9FCEE470B51C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenaiApp.Service", "SenaiApp.Service\SenaiApp.Service.csproj", "{E11CD5B1-8AD7-4D71-922D-8F4F702DED26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenaiApp.Repository", "SenaiApp.Repository\SenaiApp.Repository.csproj", "{1D0B14F8-A686-48C9-B67A-BB1D4AA078D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{A6B3424F-4C6A-4323-AC27-B47CAD30D409}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B3424F-4C6A-4323-AC27-B47CAD30D409}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B3424F-4C6A-4323-AC27-B47CAD30D409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1E4897-0BC6-42AB-BC6B-9FCEE470B51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1E4897-0BC6-42AB-BC6B-9FCEE470B51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1E4897-0BC6-42AB-BC6B-9FCEE470B51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1E4897-0BC6-42AB-BC6B-9FCEE470B51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11CD5B1-8AD7-4D71-922D-8F4F702DED26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11CD5B1-8AD7-4D71-922D-8F4F702DED26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11CD5B1-8AD7-4D71-922D-8F4F702DED26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11CD5B1-8AD7-4D71-922D-8F4F702DED26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D0B14F8-A686-48C9-B67A-BB1D4AA078D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0B14F8-A686-48C9-B67A-BB1D4AA078D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D0B14F8-A686-48C9-B67A-BB1D4AA078D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D0B14F8-A686-48C9-B67A-BB1D4AA078D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
