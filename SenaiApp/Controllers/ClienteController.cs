@@ -21,6 +21,12 @@ namespace SenaiApp.Controllers
             return View();
         }
 
+        public IActionResult Editar(long id)
+        {
+            var cliente = _clienteService.BuscarTodas().First(x => x.Id == id);
+            return View("Form", cliente);
+        }
+
         public IActionResult Form()
         {
             var model = new Cliente();
