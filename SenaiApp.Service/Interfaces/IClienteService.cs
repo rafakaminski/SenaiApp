@@ -9,11 +9,7 @@ namespace SenaiApp.Service.Interfaces
 {
     public interface IClienteService
     {
-
-        public List<Cliente> BuscarTodas();
-
-        
-
-        bool Remover(long id);
+        Cliente Salvar(Cliente cliente);
+       
     }
 }

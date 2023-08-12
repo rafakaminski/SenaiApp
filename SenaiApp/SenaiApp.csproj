@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SenaiApp.Repository\SenaiApp.Repository.csproj" />
+    <ProjectReference Include="..\SenaiApp.Service\SenaiApp.Service.csproj" />
   </ItemGroup>
 
 </Project>
