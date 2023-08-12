@@ -11,5 +11,8 @@ namespace SenaiApp.Repository.Interfaces
     {
         List<Cliente> PegarTodas();
         Cliente SalvarCliente(Cliente cliente);
+        bool RemoverCliente(long id);
+
+
     }
 }

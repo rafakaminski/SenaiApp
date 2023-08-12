@@ -25,5 +25,18 @@ namespace SenaiApp.Repository.Repositorios
         {
             return Salvar(cliente);
         }
+
+        public bool RemoverCliente(long id)
+        {
+            try
+            {
+                Remover(id);
+                return true;
+            }
+            catch
+            { 
+                return false; 
+            }
+        }
     }
 }

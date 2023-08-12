@@ -13,6 +13,8 @@ namespace SenaiApp.Service.Interfaces
 
         List<Cliente> BuscarTodas();
 
+        bool Remover(long id);
+
 
     }
 }

@@ -24,14 +24,17 @@ namespace SenaiApp.Service.Services
             return _clienteRepository.PegarTodas();
         }
 
-        public bool Remover(long id)
-        {
-            throw new NotImplementedException();
-        }
-
         public Cliente Salvar(Cliente cliente)
         {
             return _clienteRepository.SalvarCliente(cliente);
         }
+
+        public bool Remover(long id) 
+        {
+            return _clienteRepository.RemoverCliente(id);
+        }
+
+
+
     }
 }

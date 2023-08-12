@@ -23,7 +23,6 @@ namespace SenaiApp.Controllers
 
         public IActionResult Form()
         {
-
             var model = new Cliente();
             return View(model);
         }
