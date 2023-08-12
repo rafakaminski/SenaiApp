@@ -34,6 +34,11 @@ namespace SenaiApp.Controllers
             return RedirectToAction("Index");
         }
 
-      
+        public IActionResult Remover(long id)
+        {
+            _clienteService.Remover(id);
+            return RedirectToAction("Index");
+        }
+
     }
 }

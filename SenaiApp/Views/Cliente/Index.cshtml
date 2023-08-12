@@ -7,7 +7,7 @@
 <h1>Cliente</h1>
 
 <a type="button" class="btn btn-primary" asp-area="" asp-controller="Cliente" asp-action="Form">Novo</a>
-<a type="button" class="btn btn-primary" asp-area="" asp-controller="Cliente" asp-action="Form">Editar</a>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -15,6 +15,7 @@
             <th scope="col">Nome</th>
             <th scope="col">Sobrenome</th>
             <th scope="col">Sexo</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@
                     <td>@cliente.Nome</td>
                     <td>@cliente.Sobrenome</td>
                     <td>@cliente.Sexo</td>
+                    <td><a href="Cliente/Remover/@cliente.Id"> <i class="bi bi-trash"></i></a></td>
                 </tr>
             }
         }
