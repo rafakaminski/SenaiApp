@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SenaiApp.Repository.Context;
+using SenaiApp.Repository.Interfaces;
+using SenaiApp.Repository.Repositorios;
 using SenaiApp.Service.Interfaces;
 using SenaiApp.Service.Services;
 
@@ -20,6 +22,8 @@ namespace SenaiApp
                 options.UseNpgsql(builder.Configuration.GetValue<string>("ConnectionStrings:AppSenai")));
 
             builder.Services.AddScoped<IClienteService, ClienteService>();
+
+            builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 
             #endregion
 
