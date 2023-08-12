@@ -1,36 +1,33 @@
-﻿<h1>Cliente</h1>
+﻿@using SenaiApp.Domain.Entidade
+@{
+    var clientes = (List<Cliente>)ViewBag.Clientes;
+}
 
-@*<form asp-action="Form" asp-controller="Cliente" method="GET">
-    <button type="submit" class="btn btn-primary">Novo</button>
-</form>*@
+
+<h1>Cliente</h1>
 
 <a type="button" class="btn btn-primary" asp-area="" asp-controller="Cliente" asp-action="Form">Novo</a>
 <table class="table table-striped">
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">Sexo</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>twitter</td>
-        </tr>
+        @{
+            foreach (var cliente in clientes)
+            {
+                <tr>
+                    <th scope="row">@cliente.Id</th>
+                    <td>@cliente.Nome</td>
+                    <td>@cliente.Sobrenome</td>
+                    <td>@cliente.Sexo</td>
+                </tr>
+            }
+        }
+      
     </tbody>
 </table>

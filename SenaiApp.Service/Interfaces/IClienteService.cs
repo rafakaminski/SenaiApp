@@ -10,6 +10,9 @@ namespace SenaiApp.Service.Interfaces
     public interface IClienteService
     {
         Cliente Salvar(Cliente cliente);
-       
+
+        List<Cliente> BuscarTodas();
+
+
     }
 }

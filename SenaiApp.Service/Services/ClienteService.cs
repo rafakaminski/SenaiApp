@@ -21,7 +21,7 @@ namespace SenaiApp.Service.Services
 
         public List<Cliente> BuscarTodas()
         {
-            throw new NotImplementedException();
+            return _clienteRepository.PegarTodas();
         }
 
         public bool Remover(long id)

@@ -16,6 +16,8 @@ namespace SenaiApp.Controllers
 
         public IActionResult Index()
         {
+            var clientes = _clienteService.BuscarTodas();
+            ViewBag.Clientes = clientes;
             return View();
         }
 
@@ -30,7 +32,9 @@ namespace SenaiApp.Controllers
         public IActionResult Form(Cliente model)
         {
             var cliente = _clienteService.Salvar(model);
-            return View(model);
+            return RedirectToAction("Index");
         }
+
+      
     }
 }
