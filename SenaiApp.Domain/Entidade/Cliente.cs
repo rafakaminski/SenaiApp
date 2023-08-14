@@ -8,6 +8,6 @@ namespace SenaiApp.Domain.Entidade
         public string Sobrenome { get; set; }
         public SexoEnum Sexo { get; set; }
         public DateTime DataNascimento { get; set; }
-
+            
     }
 }
